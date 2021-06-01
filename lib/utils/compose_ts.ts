@@ -1303,6 +1303,7 @@ export async function deployProject(
 	apiEndpoint: string,
 	skipLogUpload: boolean,
 	projectPath: string,
+	isDraft: boolean,
 ): Promise<import('balena-release/build/models').ReleaseModel> {
 	const releaseMod = await import('balena-release');
 	const { createRelease, tagServiceImages } = await import('./compose');
@@ -1330,6 +1331,7 @@ export async function deployProject(
 				userId,
 				appId,
 				composition,
+				isDraft,
 				contract?.version,
 			),
 	);
