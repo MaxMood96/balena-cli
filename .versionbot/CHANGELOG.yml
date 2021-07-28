@@ -1,4 +1,21 @@
 - commits:
+    - subject: Add multiarch support
+      hash: 880d50d4a410c637858622d6d4ccc0d8250e929d
+      body: |
+        Bump version of balena-multibuild to the one that supports multiarch
+        Remove previous hack to avoid sending platform information to multibuild
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Paul Jonathan <pj@balena.io>
+        signed-off-by: Paul Jonathan <pj@balena.io>
+        See: 'https://github.com/balena-io/balena-cli/issues/1508'
+        see: 'https://github.com/balena-io/balena-cli/issues/1508'
+      author: toochevere
+      nested: []
+  version: 12.45.0
+  date: 2021-07-28T19:15:56.327Z
+- commits:
     - subject: 'preload: Fix storage driver detection in balenaOS v2.80.9'
       hash: 6cb28937502252e27bb0108c1327b3b9b92b1735
       body: ''
