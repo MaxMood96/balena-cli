@@ -1,4 +1,20 @@
 - commits:
+    - subject: Add balena.yml handling to `balena deploy` release creation
+      hash: b4dbc8cfb571a497ce97e8e0f6e367704e488d65
+      body: >
+        This change allows use of a contract and release semver when doing a
+        push,
+
+        and is part of the larger feature to use the builder as part of a CI/CD
+        pipeline.
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: toochevere
+      nested: []
+  version: 12.47.0
+  date: 2021-08-17T16:44:51.733Z
+- commits:
     - subject: Update dependencies (balena-sdk from v15.36.0 to v15.48.0)
       hash: 318de8f01776114a7af3227457013fc59bde60b8
       body: |
