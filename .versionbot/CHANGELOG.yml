@@ -1,4 +1,101 @@
 - commits:
+    - subject: Update dependency @types/fast-levenshtein to v0.0.4
+      hash: a29bd8d0ef829814faaeba08285497a1ea8d9091
+      body: |
+        Update @types/fast-levenshtein from 0.0.1 to 0.0.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 18.2.11
+  title: ""
+  date: 2024-07-01T17:52:41.259Z
+- commits:
+    - subject: Update actions/download-artifact action to v4.1.7
+      hash: 15c0c32a019f21614b75990b04759063225cdf17
+      body: |
+        Update actions/download-artifact from 4.1.0 to 4.1.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 18.2.10
+  title: ""
+  date: 2024-06-21T20:12:50.284Z
+- commits:
+    - subject: Update actions/setup-python digest to 65d7f2d
+      hash: 73220206a25f29d9af2c042fc1a247a02bd5bae9
+      body: |
+        Update actions/setup-python
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 18.2.9
+  title: ""
+  date: 2024-06-21T19:13:40.118Z
+- commits:
+    - subject: Update actions/upload-artifact digest to 6546280
+      hash: 2cd455ff81fb4ddbf1d5f77e0dd46c690c4dc059
+      body: |
+        Update actions/upload-artifact
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 18.2.8
+  title: ""
+  date: 2024-06-21T18:13:43.659Z
+- commits:
+    - subject: Pin dependencies
+      hash: f50287873a32a00e6aec3eafbfe53ab461d95492
+      body: |
+        Update actions/setup-node
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 18.2.7
+  title: ""
+  date: 2024-06-21T17:16:17.235Z
+- commits:
+    - subject: Update @oclif/core from 3.26.9 to 3.27.0
+      hash: 75d2d7d37543d179bc05b85de89ec7e2f33e5272
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Otavio Jacobi
+      nested: []
+  version: 18.2.6
+  title: ""
+  date: 2024-06-21T15:23:21.818Z
+- commits:
+    - subject: Limit @oclif/core to ~3.26 so that npm dedupe doesn't auto-bump it
+      hash: 5a3f0ea453bf88f04c883411460f188028eee5ac
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+    - subject: Update TypeScript to 5.5.2
+      hash: 7959e23cd3e6b506750fbd841ad0893400b4e68e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+      nested: []
+  version: 18.2.5
+  title: ""
+  date: 2024-06-21T12:11:16.888Z
+- commits:
     - subject: 'patch: fix outdated doc for "os configure"'
       hash: 163dcf596e8e318570f5f1c27485b2b834c21214
       body: |

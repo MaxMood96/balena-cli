@@ -28,7 +28,7 @@ runs:
   using: 'composite'
   steps:
     - name: Download custom source artifact
-      uses: actions/download-artifact@f44cd7b40bfd40b6aa1cc1b9b5b7bf03d3c67110 # v4.1.0
+      uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
       with:
         name: custom-${{ github.event.pull_request.head.sha || github.event.head_commit.id }}-${{ runner.os }}-${{ runner.arch }}
         path: ${{ runner.temp }}
@@ -39,14 +39,14 @@ runs:
       run: tar -xf ${{ runner.temp }}/custom.tgz
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
       with:
         node-version: ${{ inputs.NODE_VERSION }}
         cache: npm
 
     - name: Set up Python 3.11
       if: runner.os == 'macOS'
-      uses: actions/setup-python@d27e3f3d7c64b4bbf8e4abfb9b63b83e846e0435 # v4
+      uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4
       with:
         python-version: "3.11"
 
@@ -66,7 +66,7 @@ runs:
     # https://github.com/Apple-Actions/import-codesign-certs
     - name: Import Apple code signing certificate
       if: runner.os == 'macOS'
-      uses: apple-actions/import-codesign-certs@v1
+      uses: apple-actions/import-codesign-certs@253ddeeac23f2bdad1646faac5c8c2832e800071 # v1
       with:
         p12-file-base64: ${{ fromJSON(inputs.secrets).APPLE_SIGNING }}
         p12-password: ${{ fromJSON(inputs.secrets).APPLE_SIGNING_PASSWORD }}
@@ -135,7 +135,7 @@ runs:
         XCODE_APP_LOADER_TEAM_ID: ${{ inputs.XCODE_APP_LOADER_TEAM_ID }}
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@c7d193f32edcb7bfad88892161225aeda64e9392 # v4
+      uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
       with:
         name: gh-release-${{ github.event.pull_request.head.sha || github.event.head_commit.id }}-${{ strategy.job-index }}
         path: dist
